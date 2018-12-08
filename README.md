@@ -1,7 +1,7 @@
 # current-tick
 
 A tiny modern no-nosence "current-tick" implementation that equeues your function to be executed
-later withing the current event loop cycle, exactly what unfortunately named
+later __within the current event loop cycle__, exactly what unfortunately named
 [`process.nextTick`](https://nodejs.org/api/process.html#process_process_nexttick_callback_args) does in Node.js,
 but `current-tick` also works in the browser.
 
@@ -34,7 +34,7 @@ currentTick!(fn);
 ```
 
 Alternatively, you can define an `asap` method, that will 100% always exist, but
-will not guarantee that your function is always executed within the current event loop cycle.
+__will not guarantee that your function is always executed within the current event loop cycle__.
 
 ```js
 const asap = currentTick ||
