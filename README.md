@@ -1,6 +1,6 @@
 # current-tick
 
-A tiny modern no-nosence "current-tick" implementation that equeues your function to be executed
+A tiny modern no-nonsense "current-tick" implementation that equeues your function to be executed
 later __within the current event loop cycle__, exactly what unfortunately named
 [`process.nextTick`](https://nodejs.org/api/process.html#process_process_nexttick_callback_args) does in Node.js,
 but `current-tick` also works in the browser.
