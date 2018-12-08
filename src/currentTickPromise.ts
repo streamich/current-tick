@@ -1,3 +1,3 @@
-export default typeof Promise === 'object'
+export default typeof Promise === 'function'
   ? fn => Promise.resolve().then(() => fn())
   : null;

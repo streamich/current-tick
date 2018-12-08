@@ -1,8 +1,14 @@
+/**
+ * NOTE: Code in this file has been tested manually. If you
+ * want to modify it in any way, you have to add tests
+ * for this file.
+ */
+
 declare const WebKitMutationObserver: any;
 
-const Observer = typeof MutationObserver === 'object'
+const Observer = typeof MutationObserver === 'function'
   ? MutationObserver
-  : typeof WebKitMutationObserver === 'object'
+  : typeof WebKitMutationObserver === 'function'
     ? WebKitMutationObserver
     : null;
 

@@ -1,1 +1,3 @@
-export default typeof process === 'object' && (process.nextTick || null);
+export default typeof process === 'object'
+  ? process.nextTick || null
+  : null;
